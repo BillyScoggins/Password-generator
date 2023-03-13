@@ -93,3 +93,49 @@ else if (confirmLowerCase && confirmNumbers && confirmSymbols) {
   userChoices = lowerCase.concat(Numbers, Symbols);
   console.log(userChoices);
 }
+else if(confirmUpperCase && confirmNumbers && confirmSymbols) {
+  userChoices = upperCase.concat(Numbers, Symbols);
+  console.log(userChoices);
+}
+// Two true options
+else if(confirmUpperCase && confirmLowerCase) {
+  userChoices = lowerCase.concat((upperCase));
+  console.log(userChoices);
+}
+else if (confirmLowerCase && confirmNumbers) {
+  userChoices = lowerCase.concat (Numbers);
+  console.log(userChoices);
+}
+else if (confirmUpperCase && confirmSymbols) {
+  userChoices = lowerCase.concat(Symbols);
+  console.log(userChoices);
+}
+else if (confirmUpperCase && confirmNumbers) {
+  userChoices = upperCase.concat(Numbers);
+  console.log(userChoices);
+}
+else if (confirmUpperCase && confirmSymbols) {
+  userChoices = upperCase.concat(Symbols);
+  console.log(userChoices);
+}
+else if (confirmNumbers && confirmSymbols) {
+  userChoices = Numbers.concat.apply(Symbols);
+  console.log(userChoices);
+}
+// One true option
+else if (confirmLowerCase) {
+  userChoices = lowerCase;
+  console.log(userChoices);
+}
+else if (confirmUpperCase) {
+  userChoices = blankUpper.concat(upperCase);
+  console.log(userChoices);
+}
+else if (confirmNumbers) {
+  userChoices = Numbers;
+  console.log(userChoices);
+}
+else if (confirmSymbols) {
+  userChoices = Symbols;
+  console.log(userChoices);
+}
